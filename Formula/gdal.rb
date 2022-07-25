@@ -5,11 +5,9 @@ class Gdal < Formula
   sha256 "7c4406ca010dc8632703a0a326f39e9db25d9f1f6ebaaeca64a963e3fac123d1"
   license ""
 
-  depends_on formula: 'cmake'
-  depends_on formula: 'openssl'
-  depends_on formula: 'apache-arrow'
-
-  # depends_on "cmake" => :build
+  depends_on "cmake" => :build
+  depends_on "openssl" => :build
+  depends_on "apache-arrow" => :build
 
   def install
     puts "Package installed"
